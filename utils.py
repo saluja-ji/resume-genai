@@ -12,7 +12,7 @@ except LookupError:
     nltk.download('punkt')
 
 # Configure Gemini API
-GOOGLE_API_KEY = os.environ.get("AIzaSyAcTbtle2xPkYE7gX0sWHT4Wbat3gPBGHo")
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEYS")
 if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
 else:
